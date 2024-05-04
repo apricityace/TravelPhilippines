@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippine Travel Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">TravelPH</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="nav">
+            <li><a href="./index.html">Home</a></li>
+        </ul>
+    </header>
+
+    <section id="beaches" class="places">
+        <div class="title">
+            <h2>Taal, Batangas, Philippines</h2>
+        </div>
+        <div class="places-content">
+            <div class="box">
+                <div class="thum">
+                    <img src="./taal-volcano_1.jpg">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="./taal.jpg">
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="thum">
+                    <img src="./taalll.webp">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="description">
+    <div class="text">
+        <p>Taal, located in the province of Batangas, Philippines, is a place of rich cultural heritage and breathtaking natural beauty. It is renowned for its iconic Taal Volcano, often referred to as the world's smallest active volcano, nestled within the serene Taal Lake.
+
+            The town of Taal itself is steeped in history, boasting well-preserved Spanish colonial architecture that reflects its colonial past. Visitors can explore heritage sites such as the Basilica de San Martin de Tours, one of the largest Catholic churches in Asia, which showcases intricate Baroque and Neoclassical architectural styles.
+            
+            Aside from its historical landmarks, Taal offers a range of outdoor activities for nature enthusiasts. Tourists can embark on a boat ride across Taal Lake to get a closer look at the volcano or hike up to the crater rim for panoramic views of the surrounding landscape. Adventurous travelers can also opt for horseback riding tours to explore the scenic trails around the volcano.
+            
+            In addition to its natural wonders, Taal is known for its vibrant culture and culinary delights. Visitors can immerse themselves in the local culture by attending traditional festivals and events, such as the colorful Taal Town Fiesta, where they can experience lively parades, street performances, and delicious local cuisine.
+            
+            Overall, Taal, Philippines, offers a perfect blend of history, nature, and culture, making it an ideal destination for travelers seeking an enriching and memorable experience in the heart of Batangas province.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="footer">
+        <div class="main">
+            <div class="list">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li><a href="#">Bulatok, Pagadian City</a></li>
+                    <li><a href="#">Zamboanga del Sur</a></li>
+                    <li><a href="#">09453890551</a></li>
+                    <li><a href="#">myemail@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="list">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                    <a href=""><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="endtxt">
+        <p>Copyright @2024 All rights reserved | Made by Uba's Group</p>
+    </div>
+</section>
+
+<style>
+
+section {
+    padding: 80px 18%;
+}
+body {
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./taal-volcano_1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: url(./taal-volcano_1.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px); 
+    z-index: -1; 
+}
+
+
+ header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 18%;
+    transition: ease .40s; 
+}
+
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.nav {
+    display: flex;
+    list-style-type:none ;
+    background-color: rgba(245, 245, 245, 0.479);
+    border-radius: 5px;
+    text-align: center;
+    padding: 9px;
+    left: 70px;
+    position: relative;
+}
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav a {
+    color: white;
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.nav a:hover {
+    background: white;
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+
+.places-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-gap: 1rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.thum  {
+    position: relative;
+    transition: all .3s  cubic-bezier(.445,cubic-bezier(0.445, 0.05, 0.55, 0.95));
+    will-change: filter;
+    cursor: pointer;
+}
+
+.thum img {
+    width: 100%;
+    height: 350px;
+}
+
+.dest-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.description {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    background-size: 100%;
+    text-align: center;
+    padding: 130px;
+    font-size: 20px;
+   line-height: 1.5;
+}
+
+#contact {
+    background: rgb(99, 99, 245);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    padding: 20px 0;
+}
+
+.list {
+    width: 25%;
+}
+
+.list h4 {
+    font-size: 21px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.list ul li a {
+    color: #ffffFfbf;
+    font-size: 15px;
+    display: block;
+    transition: .3s;
+}
+
+.list ul li a:hover {
+    color: whitesmoke;
+    transform: translateX(12px);
+}
+
+
+.social a{
+    height: 40px;
+    width: 40px;
+    background: whitesmoke;
+    color: rgb(3, 3, 241);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.social a:hover {
+    transform: scale(1.06);
+}
+
+.footer .list ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+.footer .list ul li {
+    padding-bottom: 8px; 
+}
+
+.footer .list ul li a {
+    text-decoration: none; 
+}
+
+.footer .list ul li {
+    margin-bottom: 10px; 
+}
+
+.endtxt {
+    text-align: center;
+    padding-top: 90px;
+}
+
+
+
+</style>
+
+</body>
+</html>

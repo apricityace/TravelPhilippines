@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color );
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 18%;
+    transition: ease .40s; 
+    background-color: rgba(0, 0, 255, 0.63)95, 95, 255;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    list-style-type:none ;
+    position: relative;
+    left: 150px;
+    background: rgba(176, 176, 255, 0.185);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav a {
+    color: white;
+    font-size: var(--p-font);
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 4px;
+    transition: ease .40s;
+}
+
+.nav a:hover {
+    background: white;
+    color: var(--text-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+}
+
+#menu-icon {
+    color: var(--bg-color);
+    font-size: 35px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 80px 18%;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./Gallo-Philippines-shutterstock.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex; 
+}
+
+.welcometext h1 {
+    font-size: 45px;
+    line-height: 1.2;
+    color: white;
+    font-family: "Paytone One", sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.welcometext p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    margin-bottom: 50px;
+}
+
+.welcometext {
+    position: relative;
+    top: 30px;
+    right: 90px;
+}
+
+.home-btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 30px;
+    background: #ffffffbf;
+    color: rgb(126, 113, 158);
+    border-radius: 4px;
+    transition: ease .40s;
+    text-decoration: none;
+}
+
+.home-btn:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.text h2 {
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.row-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    grid-gap: 1rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+.container-box {
+    background: var(--bg-color);
+    border: 1px solid #f0eded;
+    padding: 50px 10px;
+    border-radius: 4px;
+    transition: all 1s ease 0s;
+    cursor: pointer;
+}
+
+.container-img img {
+    height: 85px;
+    width: 85px;
+    padding: 15px;
+    background: var(--bg-color);
+    box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.container-box h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.container-box:hover {
+    box-shadow: 5px 30px 56.1276pc rgb(55 55 55  / 12%);
+    border: 1px solid transparent;
+    transform: translateY(-3px);
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+.places-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    grid-gap: 1rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.thum  {
+    position: relative;
+    transition: all .3s  cubic-bezier(.445,cubic-bezier(0.445, 0.05, 0.55, 0.95));
+    will-change: filter;
+    cursor: pointer;
+}
+
+.thum:hover {
+    filter: brightness(100%) hue-rotate(45deg);
+    transform: scale(1.04);
+}
+
+.thum img {
+    width: 100%;
+    height: 350px;
+}
+
+.dest-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.star i {
+    color: blue;
+}
+
+.location h4 {
+    font-size: 20px;
+}
+
+.location p {
+    font-size: 13px;
+    color: #8f8e8e;
+}
+
+#contact {
+    background: rgb(99, 99, 245);
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    padding: 20px 0;
+}
+
+.list {
+    width: 25%;
+}
+
+.list h4 {
+    font-size: 21px;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.list ul li a {
+    color: #ffffFfbf;
+    font-size: 15px;
+    display: block;
+    transition: .3s;
+}
+
+.list ul li a:hover {
+    color: whitesmoke;
+    transform: translateX(12px);
+}
+
+.social a{
+    height: 40px;
+    width: 40px;
+    background: whitesmoke;
+    color: rgb(3, 3, 241);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.social a:hover {
+    transform: scale(1.06);
+}
+
+.footer .list ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+.footer .list ul li {
+    padding-bottom: 8px; 
+}
+
+.footer .list ul li a {
+    text-decoration: none; 
+}
+
+.footer .list ul li {
+    margin-bottom: 10px; 
+}
+
+.endtxt {
+    text-align: center;
+    padding-top: 90px;
+}
+
+.text h2 {
+    align-items: center;
+    text-align: center;
+}
+
+#toggle-nav {
+    display: none;
+}
+
+#toggle-nav-label {
+    display: block;
+    cursor: pointer;
+}
+
+#nav {
+    display: none;
+}
+
+#toggle-nav:checked+ nav #nav {
+    display: block;
+}
+@media (max-width: 500px) {
+
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    #menu-icon {
+        color: white;
+        font-size: 35px;
+        z-index: 10001;
+        cursor: pointer;
+        display: fixed;
+    }
+
+    .nav {
+        display: none;
+    }
+    .welcometext h1 {
+        font-size: 30px;
+        line-height: 1.2;
+        color: white;
+        font-family: "Paytone One", sans-serif;
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        left: 100px;
+    }
+
+    .logo {
+        position: relative;
+        right: 70px;
+        font-size: 20px;
+    }
+    
+    .welcometext p {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 38px;
+        margin-bottom: 50px;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        left: 100px;
+    }
+    
+    .welcometext {
+        position: relative;
+        top: 30px;
+        right: 90px;
+    }
+    
+    .home-btn {
+        display: inline-block;
+        font-size: 16px;
+        padding: 15px 30px;
+        background: #ffffffbf;
+        color: rgb(126, 113, 158);
+        border-radius: 4px;
+        transition: ease .40s;
+        text-decoration: none;
+        position: relative;
+        left: 150px;
+    }
+    
+    .home-btn:hover {
+        background: white;
+        transform: scale(1.1);
+    }
+    
+}
